@@ -1,18 +1,27 @@
-# Description
+# Déploiement de personnel
 
-1. Les fichiers correspondant aux projets contiennent des exemples de problèmes.
-2. On commencera par résoudre le problème particulier.
-3. Dans un second temps on décrirera le problème général associé: on pourra par exemple faire varier toutes les valeurs numériques.
-4. On développera ensuite une librairie python permettant de résoudre le problème général.
-5. Celle-ci devra être typé, testée et documentée et le code le plus lisible possible.
-6. On finira par développer une application graphique (ou en ligne de commande) permettant de résoudre le problème de la façon la plus intuitive possible en utilisant la librairie de manière sous jacente.
+## Présentation
 
-# Remarque
+L'objectif est de modéliser, résoudre et visualiser de manière interactive un problème de déploiement de personnel en minimisant les coûts associés.
 
-- Les exemples particuliers sont de difficultés différentes.
-- Pour les exemples difficiles on commencera potentiellement par une version simplifiée pour l'étape 2.
-- Pour les exemples plus simples il faudra au contraire faire preuve d'ambition dans les étapes 3 et 6.
+- Création d'un GUI `application.py` permettant de visualiser le problème de déploiement et la solution trouvée.
+- Un mode d'emploi nommé `gui_utilisation.md` est disponible avec un tutoriel video.
+- Le fichier `modelisation.md` explique le conversion du problème en graphe orienté et revient sur l'utilisation de l'algorithme de Dijkstra.
 
-# Affectations
+## Résolution
 
-Faites tourner le script pour voir quel est votre sujet.
+### `deploiement`
+
+Module contenant les fichiers suivants :
+
+- `probleme.py` pour la conversion du problème en langage python,
+- `modelisation.py` pour la conversion du problème en graphe orienté,
+- `resolution.py` pour la résolution du problème à l'aide de l'algorithme de Dijkstra.
+
+### `tests`
+
+Module contenant les tests de chaque script `.py` avec utilisation de la librairie `coverage` pour un rapport des tests.
+
+### Aperçu du GUI
+
+<img src="./gui.png"/>
