@@ -25,3 +25,5 @@ Module contenant les tests de chaque script `.py` avec utilisation de la librair
 ### Aperçu du GUI
 
 <img src="./gui.png"/>
+
+$$\lambda (t) = $$
